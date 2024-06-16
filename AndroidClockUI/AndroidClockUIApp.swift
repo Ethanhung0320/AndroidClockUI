@@ -11,7 +11,7 @@ import SwiftUI
 struct AndroidClockUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ClockUI()
         }
     }
 }

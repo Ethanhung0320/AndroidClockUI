@@ -3,23 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AAA21B0D2BC39627004DA697 /* AndroidClockUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA21B0C2BC39627004DA697 /* AndroidClockUIApp.swift */; };
-		AAA21B0F2BC39627004DA697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA21B0E2BC39627004DA697 /* ContentView.swift */; };
+		AAA21B0F2BC39627004DA697 /* ClockUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA21B0E2BC39627004DA697 /* ClockUI.swift */; };
 		AAA21B112BC39629004DA697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA21B102BC39629004DA697 /* Assets.xcassets */; };
 		AAA21B142BC39629004DA697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA21B132BC39629004DA697 /* Preview Assets.xcassets */; };
+		AAC2115F2C1F2B08003B06A8 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2115E2C1F2B06003B06A8 /* Basic.swift */; };
+		AAC211612C1F2B70003B06A8 /* TimeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC211602C1F2B68003B06A8 /* TimeSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAA21B092BC39627004DA697 /* AndroidClockUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidClockUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA21B0C2BC39627004DA697 /* AndroidClockUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidClockUIApp.swift; sourceTree = "<group>"; };
-		AAA21B0E2BC39627004DA697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AAA21B0E2BC39627004DA697 /* ClockUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockUI.swift; sourceTree = "<group>"; };
 		AAA21B102BC39629004DA697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAA21B132BC39629004DA697 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAC2115E2C1F2B06003B06A8 /* Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.swift; sourceTree = "<group>"; };
+		AAC211602C1F2B68003B06A8 /* TimeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AAC2115C2C1F2A72003B06A8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DateViewModel.swift,
+			);
+			target = AAA21B082BC39627004DA697 /* AndroidClockUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AAC211592C1F2A50003B06A8 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AAC2115C2C1F2A72003B06A8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AAA21B062BC39627004DA697 /* Frameworks */ = {
@@ -51,8 +69,9 @@
 		AAA21B0B2BC39627004DA697 /* AndroidClockUI */ = {
 			isa = PBXGroup;
 			children = (
+				AAC211592C1F2A50003B06A8 /* Models */,
+				AAC2115D2C1F2AFA003B06A8 /* Views */,
 				AAA21B0C2BC39627004DA697 /* AndroidClockUIApp.swift */,
-				AAA21B0E2BC39627004DA697 /* ContentView.swift */,
 				AAA21B102BC39629004DA697 /* Assets.xcassets */,
 				AAA21B122BC39629004DA697 /* Preview Content */,
 			);
@@ -65,6 +84,16 @@
 				AAA21B132BC39629004DA697 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAC2115D2C1F2AFA003B06A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAA21B0E2BC39627004DA697 /* ClockUI.swift */,
+				AAC2115E2C1F2B06003B06A8 /* Basic.swift */,
+				AAC211602C1F2B68003B06A8 /* TimeSlider.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA21B0F2BC39627004DA697 /* ContentView.swift in Sources */,
+				AAC211612C1F2B70003B06A8 /* TimeSlider.swift in Sources */,
+				AAA21B0F2BC39627004DA697 /* ClockUI.swift in Sources */,
+				AAC2115F2C1F2B08003B06A8 /* Basic.swift in Sources */,
 				AAA21B0D2BC39627004DA697 /* AndroidClockUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
